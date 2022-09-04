@@ -159,10 +159,9 @@ h3 {
 }
 
 .color-preview {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    margin-right: 10px;
     color: white;
     border: 2px solid white;
 }
@@ -193,26 +192,22 @@ code {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: auto;
-    width: 100%;
-    padding: 4px 0;
+    width: 90%;
+    padding: 4px 5% 8px 5%;
     border-top: thin solid white;
     text-align: center;
     color: #fff;
 }
 
-footer div {
-    margin-right: 25%;
-}
-
 footer p {
-    margin-left: 25%;
     font-family: 'Jetbrains Mono', monospace;
 }
 
-footer div a {
+footer a {
     /* Navigation links */
     display: flex;
     align-items: center;
@@ -228,11 +223,7 @@ footer div a {
     box-shadow: 0 4px rgba(255, 255, 255, 0.4);
 }
 
-footer div a img {
-    color: rgba(229, 143, 189, 1);
-}
-
-footer div a:hover {
+footer a:hover {
     /* Hover effect */
     top: 3px;
     box-shadow: 0 1px rgba(229, 143, 189, 0.4);
@@ -242,7 +233,7 @@ footer div a:hover {
     transition: all .3s ease;
 }
 
-footer div a:active {
+footer a:active {
     /* Click effect */
     background-color: rgba(97, 146, 231, 0.9);
     color: #ffffff;
