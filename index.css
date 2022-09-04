@@ -1,0 +1,249 @@
+body {
+    /* Default font settings */
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+    margin: 0;
+    background-color: #1b1b1b;
+    min-height: 97.2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 650px) {
+    body {
+        margin-top: 40px;
+    }
+
+    nav {
+        /* Navigation bar */
+        background-color: #1b1b1b;
+        border-bottom: thin solid white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    nav .title {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    nav .title a {
+        /* Title */
+        font-family: 'Jetbrains Mono', monospace;
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        margin: 0 auto;
+    }
+
+    nav .pages {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 650px) {
+    body {
+        margin-top: 15px;
+    }
+
+    nav {
+        /* Navigation bar */
+        background-color: #1b1b1b;
+        border-bottom: thin solid white;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 10;
+    }
+
+    nav .title a {
+        /* Title */
+        font-family: 'Jetbrains Mono', monospace;
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    nav .pages {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1.5em;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+
+nav .pages div a {
+    /* Navigation links */
+    font-family: 'Jetbrains Mono', monospace;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 4px 8px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 6px;
+    box-shadow: 0 4px rgba(255, 255, 255, 0.4);
+}
+
+nav .pages div a:hover {
+    /* Hover effect */
+    top: 3px;
+    box-shadow: 0 1px rgba(143, 176, 229, 0.4);
+    color: rgba(143, 176, 229, 1);
+    background-color: rgba(97, 146, 231, 0.29);
+    border: 2px solid rgba(143, 176, 229, 1);
+    transition: all .3s ease;
+}
+
+nav .pages div a:active {
+    /* Click effect */
+    background-color: rgba(97, 146, 231, 0.9);
+    color: #ffffff;
+}
+
+.underscoreHTML {
+    color: rgb(229, 143, 189);
+}
+
+.underscoreCSS {
+    color: deepskyblue;
+}
+
+main {
+    margin: 40px;
+    color: ghostwhite;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 6px 20px;
+    border: thin solid rgba(255, 255, 255, 0.75);
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 10px 5px;
+    border-radius: 6px;
+}
+
+.element-label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.color-preview {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid white;
+}
+
+code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    background-color: #363636;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.text-color {
+    background-color: #ffffff;
+}
+
+.background-color {
+    background-color: #1b1b1b;
+}
+
+.primary-color {
+    background-color: rgb(143, 176, 229);
+}
+
+.secondary-color {
+    background-color: rgb(229, 143, 189);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    padding: 4px 0;
+    border-top: thin solid white;
+    text-align: center;
+    color: #fff;
+}
+
+footer div {
+    margin-right: 25%;
+}
+
+footer p {
+    margin-left: 25%;
+    font-family: 'Jetbrains Mono', monospace;
+}
+
+footer div a {
+    /* Navigation links */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Jetbrains Mono', monospace;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 4px 8px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 6px;
+    box-shadow: 0 4px rgba(255, 255, 255, 0.4);
+}
+
+footer div a img {
+    color: rgba(229, 143, 189, 1);
+}
+
+footer div a:hover {
+    /* Hover effect */
+    top: 3px;
+    box-shadow: 0 1px rgba(229, 143, 189, 0.4);
+    color: rgba(229, 143, 189, 1);
+    background-color: rgba(229, 143, 189, 0.29);
+    border: 2px solid rgb(229, 143, 189, 1);
+    transition: all .3s ease;
+}
+
+footer div a:active {
+    /* Click effect */
+    background-color: rgba(97, 146, 231, 0.9);
+    color: #ffffff;
+}
